@@ -1,4 +1,5 @@
 class Company < ApplicationRecord
   belongs_to :user
-  belongs_to :category
+  has_many :posts
+  has_many :categories, through: :posts
 end

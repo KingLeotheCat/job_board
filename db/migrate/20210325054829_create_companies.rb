@@ -4,9 +4,9 @@ class CreateCompanies < ActiveRecord::Migration[6.1]
       t.string :title
       t.text :content
       t.belongs_to :user, null: false, foreign_key: true
-      t.belongs_to :category, null: false, foreign_key: true
+      
 
-      t.timestamps
+      t.timestamps  
     end
   end
 end
